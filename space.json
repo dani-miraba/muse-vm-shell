@@ -1,0 +1,7 @@
+{
+  "entry": "client/dist/index.html",
+  "name": "VM Shell",
+  "platformVersion": 31,
+  "runtime": "typescript",
+  "slug": "vm-shell"
+}

@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "tailwindcss-safe-area";
+
+@theme {
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+}
+
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d10;
+  --surface: #141820;
+  --surface-elevated: #1c222d;
+  --text: #e6edf3;
+  --dim: #8b949e;
+  --border: #262e3d;
+  --accent: #2dd4bf;
+  --radius: 12px;
+  --space-surface: var(--surface);
+  --space-surface-alt: var(--surface-elevated);
+  --space-muted: var(--dim);
+  --space-border: var(--border);
+  --space-accent: var(--accent);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.xterm {
+  height: 100%;
+  padding: 6px 8px 4px 10px;
+}
+
+.xterm-viewport {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.xterm-viewport::-webkit-scrollbar {
+  width: 4px;
+}
+
+.xterm-viewport::-webkit-scrollbar-thumb {
+  background: rgba(139, 148, 158, 0.35);
+  border-radius: 9999px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

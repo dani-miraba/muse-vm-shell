@@ -1,0 +1,32 @@
+# Dependencies & Bun cache
+node_modules/
+.bun-cache/
+bun.lock
+
+# Muse Space runtime, harness, builds & audits
+.harness/
+.space-build/
+.space-build-cvm/
+.xmds-icon
+audits/
+DATA-PLAN.md
+icon.webp
+
+# Build outputs & TypeScript incremental cache
+client/dist/
+client/dist-cvm/
+server/dist/
+*.tsbuildinfo*
+
+# Local SQLite database
+app.db
+app.db-shm
+app.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Logs & OS files
+*.log
+.DS_Store
+Thumbs.db
